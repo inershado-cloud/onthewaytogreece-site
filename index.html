@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="nosale">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -25,12 +25,6 @@ a:hover{opacity:.88}
 .serif{font-family:'Playfair Display',Georgia,serif}
 .eyebrow{font:500 13px Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
 h1,h2{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:500;color:var(--navy)}
-.sale{display:none}
-html.sale-on .sale{display:revert}
-html.sale-on .bar.sale{display:block}
-html.sale-on .badge.sale{display:inline-block}
-html.sale-on .price-old{display:inline}
-html.sale-on .nosale-price{display:none}
 .bar{background:var(--navy);color:#fff;text-align:center;padding:10px 24px;font:500 14px Jost,sans-serif;letter-spacing:.03em}
 .bar b{color:var(--sun);font-weight:500}
 header.nav{background:var(--sand);border-bottom:1px solid var(--line)}
@@ -56,10 +50,6 @@ nav.links a{text-decoration:none}
 .stack .a{left:0;top:14%;transform:rotate(-5deg)}
 .stack .b{right:2%;top:2%;transform:rotate(4deg)}
 .stack .c{left:22%;bottom:0;transform:rotate(-1deg);width:52%}
-.seal{position:absolute;right:0;bottom:6%;width:112px;height:112px;border-radius:50%;background:var(--sun);color:var(--navy);flex-direction:column;align-items:center;justify-content:center;box-shadow:0 10px 22px rgba(20,40,74,.18);z-index:3}
-html.sale-on .seal{display:flex}
-.seal b{font:600 34px Jost,sans-serif;line-height:1}
-.seal span{font:500 13px Jost,sans-serif;letter-spacing:.12em}
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
 .trust .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding-top:28px;padding-bottom:28px}
 .trust div{display:flex;flex-direction:column;gap:2px}
@@ -72,13 +62,11 @@ section.block{padding:88px 0 72px}
 .card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .card .ph{position:relative;background:var(--sand);aspect-ratio:4/3;overflow:hidden}
 .card .ph img{width:100%;height:100%;object-fit:cover;display:block}
-.badge{position:absolute;top:14px;left:14px;background:var(--terra);color:#fff;font:500 12px Jost,sans-serif;padding:5px 10px;border-radius:999px}
 .card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);flex:1}
 .card h3{margin:0;font:500 19px Jost,sans-serif}
 .card .meta{font:400 14px Jost,sans-serif;color:var(--ink)}
 .price{display:flex;align-items:baseline;gap:8px;margin-top:auto}
 .price b{font:600 20px Jost,sans-serif}
-.price .price-old{display:none;font:400 15px Jost,sans-serif;color:var(--ink);text-decoration:line-through}
 .note{font:400 13px Jost,sans-serif;color:var(--ink);margin-top:14px}
 .center{text-align:center;margin-top:36px}
 .inside{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -112,13 +100,12 @@ footer .wrap{padding-top:56px;padding-bottom:32px;display:flex;flex-direction:co
 .film{background:var(--navy);padding:56px 22px}.film-in{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px}.film video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#0a1630;box-shadow:0 24px 60px rgba(0,0,0,.35)}.film span{text-align:center;font:400 14px Jost,sans-serif;color:#c9d1e0}
 .signup{padding:56px 0;background:var(--paper);border-top:1px solid var(--line)}.signbox{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}.signbox h2{font-size:28px}.signbox p{margin:6px 0 0;font:400 15px Jost,sans-serif;color:var(--ink)}.sform{display:flex;gap:10px;flex-wrap:wrap}.sform input{font:400 16px Jost,sans-serif;padding:14px 16px;border:1px solid var(--line);border-radius:8px;min-width:260px}.sform button{border:0;cursor:pointer}
 @media(max-width:900px){.wrap{padding:0 22px}.hero{padding:44px 22px}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.grid4,.trust .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:1fr;gap:28px}.faq-grid{grid-template-columns:1fr}nav.links{display:none}section.block{padding:56px 0 48px}}
-@media(max-width:560px){.grid3{grid-template-columns:1fr}.seal{width:92px;height:92px}}
+@media(max-width:560px){.grid3{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"On The Way To Greece","url":"https://onthewaytogreece.gr/","logo":"https://onthewaytogreece.gr/logo.jpg","email":"info@onthewaytogreece.gr","sameAs":["https://www.etsy.com/shop/OnTheWayToGreece","https://www.instagram.com/onthewaytogreece/","https://www.tiktok.com/@onthewaytogreece"]},{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Naxos Travel Planner","image":"https://i.etsystatic.com/66977026/r/il/da8b2b/8482764601/il_1080xN.8482764601_9gq1.jpg","url":"https://www.etsy.com/listing/4563055235","brand":{"@type":"Brand","name":"On The Way To Greece"},"offers":{"@type":"Offer","price":"6.08","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.etsy.com/listing/4563055235"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Santorini Travel Planner","image":"https://i.etsystatic.com/66977026/r/il/75cb6f/8400005556/il_1080xN.8400005556_4bm7.jpg","url":"https://www.etsy.com/listing/4558310224","brand":{"@type":"Brand","name":"On The Way To Greece"},"offers":{"@type":"Offer","price":"6.08","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.etsy.com/listing/4558310224"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Mykonos Travel Planner","image":"https://i.etsystatic.com/66977026/r/il/df468e/8400139190/il_1080xN.8400139190_2kzs.jpg","url":"https://www.etsy.com/listing/4558298147","brand":{"@type":"Brand","name":"On The Way To Greece"},"offers":{"@type":"Offer","price":"6.08","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.etsy.com/listing/4558298147"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Pelion & Volos Travel Planner","image":"https://i.etsystatic.com/66977026/r/il/b291e4/8807143117/il_1080xN.8807143117_b7de.jpg","url":"https://www.etsy.com/listing/4605201970","brand":{"@type":"Brand","name":"On The Way To Greece"},"offers":{"@type":"Offer","price":"6.08","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.etsy.com/listing/4605201970"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Delphi & Arachova Travel Planner","image":"https://i.etsystatic.com/66977026/r/il/9738ae/8807051563/il_1080xN.8807051563_s0qr.jpg","url":"https://www.etsy.com/listing/4604866682","brand":{"@type":"Brand","name":"On The Way To Greece"},"offers":{"@type":"Offer","price":"6.08","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.etsy.com/listing/4604866682"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Meteora & Kalabaka Travel Planner","image":"https://i.etsystatic.com/66977026/r/il/19e4f8/8838376637/il_1080xN.8838376637_iyoo.jpg","url":"https://www.etsy.com/listing/4604459467","brand":{"@type":"Brand","name":"On The Way To Greece"},"offers":{"@type":"Offer","price":"6.08","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.etsy.com/listing/4604459467"}}}]}]</script>
 <script data-goatcounter="https://onthewaytogreece.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-<div class="bar sale" id="salebar"><b>Early Black Friday</b>&nbsp; 50% off every planner, 13 to 21 November <span style="opacity:.6">·</span> <b id="cd"></b></div>
 <header class="nav"><div class="wrap"><a class="logo" href="#">On The Way To Greece</a>
 <nav class="links"><a href="#planners">Planners</a><a href="/planners/">By region</a><a href="/guides/">Guides</a><a href="#inside">What's inside</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
 <a class="btn btn-line btn-sm" href="https://www.etsy.com/shop/OnTheWayToGreece" target="_blank" rel="noopener">Shop on Etsy</a></div></header>
@@ -128,11 +115,11 @@ footer .wrap{padding-top:56px;padding-bottom:32px;display:flex;flex-direction:co
 <div class="hero-l"><span class="eyebrow">Printable Greece travel planners</span>
 <h1>Your whole Greece trip, planned in one PDF.</h1>
 <p>Day-by-day itineraries, scan-to-map QR codes and local food tips for islands and mainland destinations. Written by a local in Athens, ready to print or open in GoodNotes.</p>
-<div class="cta"><a class="btn btn-terra" href="#planners"><span class="sale">Shop planners, 50% off</span><span class="nosale-price">Shop planners</span></a><a class="btn btn-line" href="#inside">See what's inside</a></div>
-<small><span class="sale">Sale ends 21 November, <b id="cd2"></b>. </span>Instant download, nothing is shipped.</small></div>
+<div class="cta"><a class="btn btn-terra" href="#planners">Shop planners</a><a class="btn btn-line" href="#inside">See what's inside</a></div>
+<small>Instant download, nothing is shipped.</small></div>
 <div class="hero-r"><div class="stack">
 <img class="one" src="https://i.etsystatic.com/66977026/r/il/9738ae/8807051563/il_1080xN.8807051563_s0qr.jpg" alt="Delphi and Arachova travel planner, printable and tablet editions">
-<div class="seal sale"><b>50%</b><span>OFF</span></div></div></div></div>
+</div></div></div>
 
 <div class="trust"><div class="wrap">
 <div><b>Instant download</b><span>Available right after payment on Etsy</span></div>
@@ -145,12 +132,12 @@ footer .wrap{padding-top:56px;padding-bottom:32px;display:flex;flex-direction:co
 <section class="block" id="planners"><div class="wrap">
 <div class="head"><span class="eyebrow">The planners</span><h2>Choose your destination</h2></div>
 <div class="grid3">
-<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/da8b2b/8482764601/il_1080xN.8482764601_9gq1.jpg" alt="Naxos Travel Planner" loading="lazy"><span class="badge sale">50% off</span></div><div class="body"><div><h3>Naxos Travel Planner</h3><div class="meta">Cyclades · Island itinerary · PDF</div></div><div class="price"><b class="sale">€3.04</b><b class="nosale-price">€6.08</b><span class="price-old">€6.08</span></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4563055235" target="_blank" rel="noopener">View on Etsy</a></div></div>
-<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/75cb6f/8400005556/il_1080xN.8400005556_4bm7.jpg" alt="Santorini Travel Planner" loading="lazy"><span class="badge sale">50% off</span></div><div class="body"><div><h3>Santorini Travel Planner</h3><div class="meta">Cyclades · 5-day itinerary · PDF</div></div><div class="price"><b class="sale">€3.04</b><b class="nosale-price">€6.08</b><span class="price-old">€6.08</span></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4558310224" target="_blank" rel="noopener">View on Etsy</a></div></div>
-<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/df468e/8400139190/il_1080xN.8400139190_2kzs.jpg" alt="Mykonos Travel Planner" loading="lazy"><span class="badge sale">50% off</span></div><div class="body"><div><h3>Mykonos Travel Planner</h3><div class="meta">Cyclades · Island itinerary · PDF</div></div><div class="price"><b class="sale">€3.04</b><b class="nosale-price">€6.08</b><span class="price-old">€6.08</span></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4558298147" target="_blank" rel="noopener">View on Etsy</a></div></div>
-<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/b291e4/8807143117/il_1080xN.8807143117_b7de.jpg" alt="Pelion and Volos Travel Planner" loading="lazy"><span class="badge sale">50% off</span></div><div class="body"><div><h3>Pelion &amp; Volos Travel Planner</h3><div class="meta">Thessaly · 3-day guide · 8 QR maps</div></div><div class="price"><b class="sale">€3.04</b><b class="nosale-price">€6.08</b><span class="price-old">€6.08</span></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4605201970" target="_blank" rel="noopener">View on Etsy</a></div></div>
-<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/9738ae/8807051563/il_1080xN.8807051563_s0qr.jpg" alt="Delphi and Arachova Travel Planner" loading="lazy"><span class="badge sale">50% off</span></div><div class="body"><div><h3>Delphi &amp; Arachova Travel Planner</h3><div class="meta">Central Greece · 3-day guide · 11 QR maps</div></div><div class="price"><b class="sale">€3.04</b><b class="nosale-price">€6.08</b><span class="price-old">€6.08</span></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4604866682" target="_blank" rel="noopener">View on Etsy</a></div></div>
-<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/19e4f8/8838376637/il_1080xN.8838376637_iyoo.jpg" alt="Meteora and Kalabaka Travel Planner" loading="lazy"><span class="badge sale">50% off</span></div><div class="body"><div><h3>Meteora &amp; Kalabaka Travel Planner</h3><div class="meta">Thessaly · 3-day guide · 11 QR maps</div></div><div class="price"><b class="sale">€3.04</b><b class="nosale-price">€6.08</b><span class="price-old">€6.08</span></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4604459467" target="_blank" rel="noopener">View on Etsy</a></div></div>
+<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/da8b2b/8482764601/il_1080xN.8482764601_9gq1.jpg" alt="Naxos Travel Planner" loading="lazy"></div><div class="body"><div><h3>Naxos Travel Planner</h3><div class="meta">Cyclades · Island itinerary · PDF</div></div><div class="price"><b>€6.08</b></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4563055235" target="_blank" rel="noopener">View on Etsy</a></div></div>
+<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/75cb6f/8400005556/il_1080xN.8400005556_4bm7.jpg" alt="Santorini Travel Planner" loading="lazy"></div><div class="body"><div><h3>Santorini Travel Planner</h3><div class="meta">Cyclades · 5-day itinerary · PDF</div></div><div class="price"><b>€6.08</b></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4558310224" target="_blank" rel="noopener">View on Etsy</a></div></div>
+<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/df468e/8400139190/il_1080xN.8400139190_2kzs.jpg" alt="Mykonos Travel Planner" loading="lazy"></div><div class="body"><div><h3>Mykonos Travel Planner</h3><div class="meta">Cyclades · Island itinerary · PDF</div></div><div class="price"><b>€6.08</b></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4558298147" target="_blank" rel="noopener">View on Etsy</a></div></div>
+<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/b291e4/8807143117/il_1080xN.8807143117_b7de.jpg" alt="Pelion and Volos Travel Planner" loading="lazy"></div><div class="body"><div><h3>Pelion &amp; Volos Travel Planner</h3><div class="meta">Thessaly · 3-day guide · 8 QR maps</div></div><div class="price"><b>€6.08</b></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4605201970" target="_blank" rel="noopener">View on Etsy</a></div></div>
+<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/9738ae/8807051563/il_1080xN.8807051563_s0qr.jpg" alt="Delphi and Arachova Travel Planner" loading="lazy"></div><div class="body"><div><h3>Delphi &amp; Arachova Travel Planner</h3><div class="meta">Central Greece · 3-day guide · 11 QR maps</div></div><div class="price"><b>€6.08</b></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4604866682" target="_blank" rel="noopener">View on Etsy</a></div></div>
+<div class="card"><div class="ph"><img src="https://i.etsystatic.com/66977026/r/il/19e4f8/8838376637/il_1080xN.8838376637_iyoo.jpg" alt="Meteora and Kalabaka Travel Planner" loading="lazy"></div><div class="body"><div><h3>Meteora &amp; Kalabaka Travel Planner</h3><div class="meta">Thessaly · 3-day guide · 11 QR maps</div></div><div class="price"><b>€6.08</b></div><a class="btn btn-navy btn-sm" href="https://www.etsy.com/listing/4604459467" target="_blank" rel="noopener">View on Etsy</a></div></div>
 </div>
 <p class="note">Prices are shown in euros. Etsy shows the final price in your own currency at checkout.</p>
 <div class="center"><a class="btn btn-navy" href="/planners/">Browse all planners by region</a> <a class="btn btn-line" href="https://www.etsy.com/shop/OnTheWayToGreece" target="_blank" rel="noopener">See the Etsy shop</a></div>
@@ -183,7 +170,7 @@ footer .wrap{padding-top:56px;padding-bottom:32px;display:flex;flex-direction:co
 <div class="etsy"><span style="font:400 16px Jost,sans-serif">All planners, reviews and checkout are on our Etsy shop.</span><a class="btn btn-line btn-sm" href="https://www.etsy.com/shop/OnTheWayToGreece" target="_blank" rel="noopener">Visit the Etsy shop</a></div>
 </div></section>
 
-<section class="signup" id="signup"><div class="wrap"><div class="signbox"><div><h2>New planners and sale alerts</h2><p>Be the first to know when a new destination goes live. It opens your email app to send the request.</p></div><form id="sf" class="sform"><input type="email" id="se" required placeholder="you@example.com" aria-label="Your email address"><button class="btn btn-terra" type="submit">Notify me</button></form></div></div></section>
+<section class="signup" id="signup"><div class="wrap"><div class="signbox"><div><h2>New planner alerts</h2><p>Be the first to know when a new destination goes live. It opens your email app to send the request.</p></div><form id="sf" class="sform"><input type="email" id="se" required placeholder="you@example.com" aria-label="Your email address"><button class="btn btn-terra" type="submit">Notify me</button></form></div></div></section>
 
 <footer><div class="wrap">
 <div class="fcols"><div style="max-width:320px"><div class="logo" style="color:#fff;margin-bottom:10px">On The Way To Greece</div><span style="font:400 15px/1.5 Jost,sans-serif">Printable travel planners for Greece, made by a local.</span></div>
@@ -192,10 +179,6 @@ footer .wrap{padding-top:56px;padding-bottom:32px;display:flex;flex-direction:co
 <div><h4>Follow</h4><a href="https://www.instagram.com/onthewaytogreece/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@onthewaytogreece" target="_blank" rel="noopener">TikTok</a></div></div>
 <div class="fbot"><span>© 2026 onthewaytogreece · onthewaytogreece.gr · info@onthewaytogreece.gr</span><a href="privacy.html">Privacy</a></div></div></footer>
 <script>
-(function(){var s=Date.parse('2026-11-13T00:00:00+02:00'),e=Date.parse('2026-11-22T00:00:00+02:00'),n=Date.now();if(n>=s&&n<e)document.documentElement.className='sale-on';})();
-</script>
-<script>
-(function(){var end=Date.parse('2026-11-22T00:00:00+02:00');function f(){var ms=end-Date.now();if(ms<=0)return;var d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4);var x=d>0?d+(d==1?' day ':' days ')+h+' h left':h>0?'only '+h+' h '+m+' min left':'only '+m+' min left';['cd','cd2'].forEach(function(i){var e=document.getElementById(i);if(e)e.textContent=x})}f();setInterval(f,60000)})();
 (function(){var v=document.getElementById('film');if(!v||!('IntersectionObserver' in window))return;new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}})},{threshold:.4}).observe(v)})();
 (function(){var f=document.getElementById('sf');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('se').value;location.href='mailto:info@onthewaytogreece.gr?subject='+encodeURIComponent('Subscribe to new planner alerts')+'&body='+encodeURIComponent('Please add me to the list: '+m)})})();
 </script>
