@@ -16,6 +16,7 @@
   --line: #e6dfd1;
   --line-light: rgba(20, 40, 74, 0.08);
   --terra: #c44d21;
+  --terracotta: #c44d21;
   --terra-hover: #ab3e15;
   --sun: #f59f00;
   --sun-light: #fff3bf;
@@ -1214,6 +1215,8 @@ section.block {
 
 /* Footer */
 footer {
+  position: relative;
+  z-index: 30;
   background: var(--navy);
   color: #c9d5e8;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -2547,7 +2550,8 @@ footer .wrap {
   z-index: 1;
 }
 
-.planners-hero-wrapper .sky-gradient-golden-dawn {
+.planners-hero-wrapper .sky-gradient-golden-dawn,
+.links-hero-wrapper .sky-gradient-golden-dawn {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2565,10 +2569,11 @@ footer .wrap {
   }
 }
 
-.planners-hero-wrapper .golden-dawn-sun {
+.planners-hero-wrapper .golden-dawn-sun,
+.links-hero-wrapper .golden-dawn-sun {
   position: absolute;
   left: 78%;
-  top: 32%;
+  top: 140px;
   width: 170px;
   height: 170px;
   transform: translate(-50%, -50%);
@@ -2576,7 +2581,8 @@ footer .wrap {
   z-index: 2;
 }
 
-.planners-hero-wrapper .golden-dawn-sun .celestial-core {
+.planners-hero-wrapper .golden-dawn-sun .celestial-core,
+.links-hero-wrapper .golden-dawn-sun .celestial-core {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -2585,7 +2591,8 @@ footer .wrap {
   animation: sunGlowPulse 5s ease-in-out infinite;
 }
 
-.planners-hero-wrapper .golden-dawn-sun .celestial-rays {
+.planners-hero-wrapper .golden-dawn-sun .celestial-rays,
+.links-hero-wrapper .golden-dawn-sun .celestial-rays {
   position: absolute;
   inset: -25px;
   border-radius: 50%;
@@ -2593,7 +2600,8 @@ footer .wrap {
   animation: rotateSunRays 35s linear infinite;
 }
 
-.planners-hero-wrapper .scenery-svg {
+.planners-hero-wrapper .scenery-svg,
+.links-hero-wrapper .scenery-svg {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3022,7 +3030,9 @@ footer .wrap {
   inset: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   z-index: 1;
+  pointer-events: none;
 }
 
 .links-content-card {
@@ -3194,4 +3204,30 @@ footer .wrap {
 .link-badge-blue {
   background: rgba(30, 88, 179, 0.1);
   color: var(--blue-accent);
+}
+
+/* Links Page Mobile Responsiveness & Polish */
+@media (max-width: 768px) {
+  .golden-dawn-sun,
+  .planners-hero-wrapper .golden-dawn-sun,
+  .links-hero-wrapper .golden-dawn-sun {
+    left: auto;
+    right: 4%;
+    top: 90px;
+    width: 110px;
+    height: 110px;
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .links-content-card {
+    padding: 26px 18px;
+    margin: 16px auto 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.88);
+  }
+  .links-hero-wrapper {
+    padding-bottom: 40px;
+  }
 }
