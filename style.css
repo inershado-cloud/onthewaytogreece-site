@@ -2501,15 +2501,134 @@ footer .wrap {
   filter: drop-shadow(0 0 6px rgba(255, 224, 102, 0.9));
 }
 
-/* Sailboat Motion */
+/* Animated Sailing Boat Moving Across the Aegean Sea */
 .scenery-sailboat {
-  animation: boatBob 4.5s ease-in-out infinite;
+  animation: sailAcrossSea 22s ease-in-out infinite alternate;
   transform-origin: 30px 25px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
-@keyframes boatBob {
-  0%, 100% { transform: translate(1220px, 425px) rotate(0deg); }
-  50% { transform: translate(1220px, 420px) rotate(-2.5deg); }
+@keyframes sailAcrossSea {
+  0% {
+    transform: translate(1420px, 304px) rotate(1.2deg);
+  }
+  20% {
+    transform: translate(1280px, 308px) rotate(-2deg);
+  }
+  40% {
+    transform: translate(1140px, 302px) rotate(1.8deg);
+  }
+  60% {
+    transform: translate(1000px, 307px) rotate(-1.5deg);
+  }
+  80% {
+    transform: translate(880px, 303px) rotate(2deg);
+  }
+  100% {
+    transform: translate(780px, 307px) rotate(-1.2deg);
+  }
+}
+
+/* Planners Page Scenery Hero Banner (Golden Dawn) */
+.planners-hero-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(12, 27, 51, 0.08);
+}
+
+.planners-hero-wrapper .scenery-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.planners-hero-wrapper .sky-gradient-golden-dawn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffaf43 0%, #ffc84b 32%, #fcd5b5 65%, #fff4ea 100%);
+  animation: goldenDawnAtmosphere 14s ease-in-out infinite alternate;
+}
+
+@keyframes goldenDawnAtmosphere {
+  0% {
+    filter: brightness(1) saturate(1.05);
+  }
+  100% {
+    filter: brightness(1.12) saturate(1.2) hue-rotate(-6deg);
+  }
+}
+
+.planners-hero-wrapper .golden-dawn-sun {
+  position: absolute;
+  left: 78%;
+  top: 32%;
+  width: 170px;
+  height: 170px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.planners-hero-wrapper .golden-dawn-sun .celestial-core {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fff38a;
+  box-shadow: 0 0 60px #ffa94d, 0 0 100px rgba(255, 175, 67, 0.6);
+  animation: sunGlowPulse 5s ease-in-out infinite;
+}
+
+.planners-hero-wrapper .golden-dawn-sun .celestial-rays {
+  position: absolute;
+  inset: -25px;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 224, 102, 0.6);
+  animation: rotateSunRays 35s linear infinite;
+}
+
+.planners-hero-wrapper .scenery-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.planners-hero-wrapper .planners-hero-content {
+  position: relative;
+  z-index: 10;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.planners-hero-card {
+  max-width: 860px;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 32px 38px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 16px 42px rgba(12, 27, 51, 0.08);
+}
+
+.windmill-blades {
+  animation: spinWindmill 16s linear infinite;
+  transform-origin: 352.5px 222px;
+}
+
+@keyframes spinWindmill {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* Acropolis Parthenon Temple */
