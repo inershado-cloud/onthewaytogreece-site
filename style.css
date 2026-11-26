@@ -2825,22 +2825,6 @@ footer .wrap {
   pointer-events: none;
 }
 
-/* 4. Complete Clearance between Scenery Controls & Interactive Showcase */
-.scenery-controls-wrap {
-  position: absolute;
-  top: 16px;
-  right: 28px;
-  z-index: 25;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-.hero-showcase {
-  margin-top: 115px !important;
-}
-
 /* 5. Reverse Ticker: Crisp High-Contrast Deep Navy on Light Background */
 .marquee-container.reverse {
   background: #f1f5f9 !important;
@@ -2869,72 +2853,10 @@ footer .wrap {
 }
 
 /* ==========================================================================
-   CARTOON GREEK SCENERY & BUTTON PLACEMENT ADJUSTMENTS
+   HOMEPAGE HERO: DESKTOP & MOBILE RESPONSIVE ENGINE
    ========================================================================== */
 
-/* Fix chopped dynamic word (Santorini italic clipping) */
-.dynamic-word-wrap {
-  display: inline-block !important;
-  position: relative !important;
-  height: 1.28em !important;
-  vertical-align: bottom !important;
-  overflow: visible !important; /* Never chop letters */
-  color: var(--terracotta) !important;
-  font-family: var(--font-display) !important;
-  font-style: italic !important;
-  font-weight: 700 !important;
-  text-decoration: underline !important;
-  text-decoration-color: rgba(199, 107, 78, 0.4) !important;
-  text-underline-offset: 4px !important;
-  min-width: 215px !important;
-  padding-right: 22px !important; /* Generous breathing room for italic slant */
-}
-
-.dynamic-word {
-  display: block;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  padding-right: 18px; /* Ensure italic 'i' is never cut off */
-}
-
-/* Position hero buttons lower than the buildings */
-.hero-cta {
-  display: flex !important;
-  gap: 16px !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-  margin-top: 60px !important; /* Move lower than the buildings */
-  position: relative !important;
-  z-index: 15 !important;
-}
-
-.hero-social-proof {
-  margin-top: 10px !important;
-  position: relative !important;
-  z-index: 15 !important;
-}
-
-/* Cartoon SVG sizing & alignment */
-.scenery-svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 480px !important;
-  max-height: 60% !important;
-  pointer-events: none;
-}
-
-/* ==========================================================================
-   CARTOON GREEK SCENERY: BUTTONS BELOW BUILDINGS & UNCHOPPED HEADLINE
-   ========================================================================== */
-
-/* 1. Unchop Santorini: completely visible with no detached period */
+/* Universal Dynamic Word Cycler */
 .hero-title-steady {
   font-size: clamp(30px, 3.8vw, 48px);
   line-height: 1.25;
@@ -2958,8 +2880,6 @@ footer .wrap {
   text-decoration: underline !important;
   text-decoration-color: rgba(199, 107, 78, 0.4) !important;
   text-underline-offset: 5px !important;
-  min-width: 230px !important;
-  padding-right: 28px !important;
 }
 
 .dynamic-word {
@@ -2971,46 +2891,241 @@ footer .wrap {
   top: 0;
   left: 0;
   white-space: nowrap !important;
-  padding-right: 24px !important;
 }
 
-/* 2. Position Buttons LOWER than the Buildings */
-.hero-wrapper {
-  padding: 50px 0 100px !important;
-  min-height: 820px !important;
+/* DESKTOP HERO LAYOUT (min-width: 901px) */
+@media (min-width: 901px) {
+  .hero-wrapper {
+    padding: 50px 0 100px !important;
+    min-height: 820px !important;
+  }
+  .dynamic-word-wrap {
+    min-width: 230px !important;
+    padding-right: 28px !important;
+  }
+  .dynamic-word {
+    padding-right: 24px !important;
+  }
+  .scenery-controls-wrap {
+    position: absolute;
+    top: 16px;
+    right: 28px;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .hero-showcase {
+    margin-top: 115px !important;
+  }
+  .hero-l {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-cta {
+    display: flex !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    margin-top: 135px !important; /* Pushes buttons below the village buildings */
+    position: relative !important;
+    z-index: 20 !important;
+  }
+  .hero-social-proof {
+    margin-top: 8px !important;
+    position: relative !important;
+    z-index: 20 !important;
+  }
+  .scenery-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 540px !important;
+    pointer-events: none;
+  }
 }
 
-.hero-l {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* The hero buttons sit on the lower foreground bank BELOW the buildings */
-.hero-cta {
-  display: flex !important;
-  gap: 16px !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-  margin-top: 135px !important; /* Pushes buttons below the village buildings */
-  position: relative !important;
-  z-index: 20 !important;
-}
-
-.hero-social-proof {
-  margin-top: 8px !important;
-  position: relative !important;
-  z-index: 20 !important;
-}
-
-/* 3. Cartoon Scenery SVG Positioning */
-.scenery-svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 540px !important;
-  pointer-events: none;
+/* MOBILE & TABLET HERO LAYOUT (max-width: 900px) */
+@media (max-width: 900px) {
+  .hero-wrapper {
+    padding: 24px 0 40px !important;
+    min-height: auto !important;
+    overflow: hidden;
+  }
+  .scenery-controls-wrap {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 0 auto 14px !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 6px !important;
+    z-index: 25 !important;
+  }
+  .scenery-ctrl-group {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+  }
+  .scenery-ctrl-label {
+    display: none !important;
+  }
+  .scenery-pills {
+    display: flex !important;
+    gap: 5px !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+  }
+  .scene-btn, .light-btn {
+    padding: 4px 11px !important;
+    font-size: 11px !important;
+    border-radius: var(--radius-pill) !important;
+    white-space: nowrap !important;
+  }
+  .wrap.hero {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    text-align: center !important;
+    padding-top: 6px !important;
+  }
+  .hero-l {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 14px !important;
+  }
+  .live-pill {
+    margin: 0 auto 8px !important;
+    font-size: 11.5px !important;
+    padding: 5px 14px !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+  .hero-title-steady {
+    font-size: clamp(24px, 6.8vw, 34px) !important;
+    line-height: 1.22 !important;
+    text-align: center !important;
+    margin: 0 auto 10px !important;
+  }
+  .dynamic-word-wrap {
+    min-width: auto !important;
+    width: auto !important;
+    display: inline-block !important;
+    padding-right: 8px !important;
+  }
+  .dynamic-word {
+    padding-right: 8px !important;
+  }
+  .hero-l p {
+    text-align: center !important;
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    max-width: 100% !important;
+    margin: 0 auto 16px !important;
+    color: #2c3a52 !important;
+  }
+  .hero-cta {
+    margin-top: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 12px !important;
+    position: relative !important;
+    z-index: 20 !important;
+  }
+  .hero-cta .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+  }
+  .hero-social-proof {
+    margin-top: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 12.5px !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    position: relative !important;
+    z-index: 20 !important;
+  }
+  .hero-showcase {
+    margin-top: 24px !important;
+    width: 100% !important;
+    max-width: 330px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+  .hero-satellite-1 {
+    top: -12px !important;
+    right: 4px !important;
+    font-size: 10.5px !important;
+    padding: 4px 10px !important;
+  }
+  .hero-satellite-2 {
+    display: none !important;
+  }
+  .hero-satellite-3 {
+    display: none !important;
+  }
+  .seal-stamp-container {
+    display: none !important;
+  }
+  .interactive-hint-badge {
+    bottom: -16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 11.5px !important;
+    padding: 5px 14px !important;
+    white-space: nowrap !important;
+  }
+  .scenery-birds {
+    display: none !important;
+  }
+  .scenery-svg {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 240px !important;
+    max-height: 35% !important;
+    opacity: 0.65 !important;
+    pointer-events: none !important;
+  }
+  .filter-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    padding: 6px 4px 14px !important;
+    margin-bottom: 24px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-tab {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
 }
 
 
