@@ -188,6 +188,27 @@
           <span class="link-badge link-badge-terra">From €6.08</span>
         </a>
 
+        <!-- High-Converting Lead Magnet Box -->
+        <div class="lead-magnet-box">
+          <span class="lead-magnet-badge">🎁 Free Instant Download</span>
+          <h2 class="lead-magnet-title">Greek Island Packing &amp; Ferry Cheat Sheet</h2>
+          <p class="lead-magnet-desc">What to pack (and what to leave home) for Greek summer, cobblestone-safe footwear tips, meltemi wind essentials, and how to avoid hidden ferry fees.</p>
+          
+          <div id="leadMagnetFormWrap">
+            <form class="lead-magnet-form" id="leadMagnetForm">
+              <input type="email" id="leadEmail" class="lead-magnet-input" required placeholder="Enter your email address" aria-label="Your email address">
+              <button type="submit" class="lead-magnet-btn">Get Free Guide ↓</button>
+            </form>
+            <p class="lead-magnet-fineprint">🔒 100% free PDF guide. No spam, ever. 1-click unsubscribe.</p>
+          </div>
+
+          <div class="lead-magnet-success" id="leadSuccessBox">
+            <b>🎉 You're all set!</b>
+            <p style="margin:6px 0 12px;font-size:13px">Your Greek Island Packing Checklist &amp; Ferry Cheat Sheet is ready:</p>
+            <a href="/guides/greek-island-packing-list/" class="btn btn-navy btn-sm" style="display:inline-block">Read / Download Free Guide ↗</a>
+          </div>
+        </div>
+
         <!-- Browse Planners by Region -->
         <a class="link-card" href="/planners/">
           <div class="link-card-content">
@@ -308,6 +329,28 @@ const mobileDrawer = document.getElementById('mobileDrawer');
 if (burgerBtn && mobileDrawer) {
   burgerBtn.addEventListener('click', () => {
     mobileDrawer.classList.toggle('open');
+  });
+}
+
+// Lead Magnet Signup Handler
+const leadForm = document.getElementById('leadMagnetForm');
+if (leadForm) {
+  leadForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailInput = document.getElementById('leadEmail');
+    const email = emailInput ? emailInput.value.trim() : '';
+    if (!email) return;
+    
+    // UI Success State
+    const formWrap = document.getElementById('leadMagnetFormWrap');
+    if (formWrap) formWrap.style.display = 'none';
+    const successBox = document.getElementById('leadSuccessBox');
+    if (successBox) successBox.classList.add('active');
+    
+    // Track event in GoatCounter if available
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: 'lead-magnet-links-signup', title: 'Lead Magnet Links Signup', event: true });
+    }
   });
 }
 </script>
