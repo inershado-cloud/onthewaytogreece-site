@@ -832,24 +832,6 @@
   </div>
 </div>
 
-<!-- Cinema Film Container -->
-<div class="film-container">
-  <div class="wrap film-box">
-    <div class="section-head reveal active" style="margin-bottom:20px">
-      <span class="eyebrow" style="color:var(--sun)">Visual Overview</span>
-      <h2 style="color:#fff">See it in action</h2>
-      <p style="color:#c9d5e8">Take a 24-second look at how the itineraries and map integrations work.</p>
-    </div>
-    <div class="film-wrapper reveal active delay-1">
-      <video id="film" src="intro.mp4" poster="image.jpg" muted loop playsinline controls preload="none" aria-label="Intro film: On The Way To Greece travel planners"></video>
-    </div>
-    <div class="film-caption">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-      <span>24-second overview video · Click the speaker icon for audio</span>
-    </div>
-  </div>
-</div>
-
 <!-- How It Works Section -->
 <div class="how-section" id="how">
   <div class="wrap">
@@ -1141,20 +1123,6 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLookInsideModal();
 });
 
-// 7. Video Auto-Play Observer
-const video = document.getElementById('film');
-if (video && ('IntersectionObserver' in window)) {
-  new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const p = video.play();
-        if (p && p.catch) p.catch(() => {});
-      } else {
-        video.pause();
-      }
-    });
-  }, { threshold: 0.4 }).observe(video);
-}
 
 
 // 9. 3D Mouse Parallax on Hero Showcase
