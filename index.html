@@ -77,7 +77,7 @@
         <span class="live-dot"></span>
         <span>Curated by an Athens Local · 110+ Greece Itineraries</span>
       </div>
-      <h1>Your whole Greece trip, planned in one beautiful PDF.</h1>
+      <h1 style="min-height:2.4em">Your Greece trip, planned with <span class="dynamic-word-wrap" id="dynamicWordWrap"><span class="dynamic-word active">Santorini</span><span class="dynamic-word">Crete</span><span class="dynamic-word">Milos</span><span class="dynamic-word">Athens</span><span class="dynamic-word">Naxos</span><span class="dynamic-word">Corfu</span></span> insider secrets.</h1>
       <p>Day-by-day itineraries, instant scan-to-map QR codes, authentic taverna spots, and clickable tablet tabs. Researched and designed in Greece, ready to print or open in GoodNotes.</p>
       
       <div class="hero-cta">
@@ -100,6 +100,17 @@
     <!-- Floating 3D Showcase -->
     <div class="hero-r reveal active delay-2">
       <div class="hero-showcase">
+        <!-- Floating Satellite Micro-Badges -->
+        <div class="hero-satellite hero-satellite-1">
+          <span class="radar-dot"></span>
+          <span>Santorini Caldera Route</span>
+        </div>
+        <div class="hero-satellite hero-satellite-2">
+          <span>⭐ 4.9 · 10,000+ Downloads</span>
+        </div>
+        <div class="hero-satellite hero-satellite-3">
+          <span>📱 GoodNotes &amp; PDF</span>
+        </div>
         
         <!-- Rotating Authentic Greek Seal Stamp -->
         <div class="seal-stamp-container">
@@ -120,6 +131,7 @@
             <span style="font:600 11px var(--font-sans);color:#ffcb5c;letter-spacing:0.06em">📱 GOODNOTES &amp; TABLET EDITION</span>
             <div style="display:flex;gap:4px"><span style="width:6px;height:6px;border-radius:50%;background:#ffcb5c"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.4)"></span></div>
           </div>
+          <div class="glare-sweep-layer"></div>
           <img src="https://i.etsystatic.com/66977026/r/il/75cb6f/8400005556/il_1080xN.8400005556_4bm7.jpg" alt="Santorini Travel Planner" style="width:100%;display:block">
         </div>
         
@@ -176,6 +188,25 @@
     <div class="marquee-item"><span>⛵</span><b>Milos</b><span>Sarakiniko Lunar Rocks</span><span class="dot-sep"></span></div>
     <div class="marquee-item"><span>🌲</span><b>Pelion</b><span>Tsagarada &amp; Hidden Sea</span><span class="dot-sep"></span></div>
     <div class="marquee-item"><span>☀️</span><b>Paros</b><span>Naoussa Fishing Port</span><span class="dot-sep"></span></div>
+  </div>
+</div>
+
+<!-- Reverse Infinite Marquee Strip: Features & Tools -->
+<div class="marquee-container reverse" aria-hidden="true" style="margin-top:3px;background:rgba(12,27,51,0.035);padding:10px 0;border-bottom:1px solid rgba(12,27,51,0.08)">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>✨</span><b>100% Offline PDF</b><span>Access anywhere</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>📍</span><b>Clickable QR Maps</b><span>Instant GPS navigation</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>🍷</span><b>Hidden Tavernas</b><span>Authentic local food</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>⛵</span><b>Ferry Hacks</b><span>Island-hopping routes</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>🌅</span><b>Secret Sunset Spots</b><span>Skip the crowded spots</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>📱</span><b>GoodNotes Tabs</b><span>Tablet navigation ready</span><span class="dot-sep"></span></div>
+    <!-- Repetition -->
+    <div class="marquee-item"><span>✨</span><b>100% Offline PDF</b><span>Access anywhere</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>📍</span><b>Clickable QR Maps</b><span>Instant GPS navigation</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>🍷</span><b>Hidden Tavernas</b><span>Authentic local food</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>⛵</span><b>Ferry Hacks</b><span>Island-hopping routes</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>🌅</span><b>Secret Sunset Spots</b><span>Skip the crowded spots</span><span class="dot-sep"></span></div>
+    <div class="marquee-item"><span>📱</span><b>GoodNotes Tabs</b><span>Tablet navigation ready</span><span class="dot-sep"></span></div>
   </div>
 </div>
 
@@ -563,12 +594,30 @@
       </div>
       
       <div class="sim-display">
-        <div class="sim-page-frame" id="simFrame">
-          <img id="simImg" src="/assets/preview/itinerary.jpg" alt="Simulated planner page" style="width:100%;display:block">
+        <div class="ipad-mockup" id="simFrame">
+          <div class="ipad-camera"></div>
+          <div class="ipad-screen">
+            <div class="glare-sweep-layer"></div>
+            <!-- Hotspot Pins -->
+            <div class="hotspot-pin" style="top:26%;left:48%">
+              📍
+              <div class="hotspot-tooltip">Ammoudi Bay: Fresh Grilled Octopus</div>
+            </div>
+            <div class="hotspot-pin" style="top:62%;left:32%">
+              🔍
+              <div class="hotspot-tooltip">Tap to open GPS pin in Google Maps</div>
+            </div>
+            <img id="simImg" src="/assets/preview/itinerary.jpg" alt="Planner page preview">
+          </div>
         </div>
-        <div style="margin-top:14px;font:500 12px var(--font-sans);color:var(--ink);display:flex;align-items:center;gap:6px">
-          <span>⚡ Interactive Preview:</span>
-          <span id="simCaption" style="font-weight:600;color:var(--navy)">Page 6 · GPS QR Map Integration Active</span>
+        <div style="max-width:520px;width:100%;margin-top:14px">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;color:var(--navy)">
+            <span id="simCaption">Page 6 · GPS QR Map Integration Active</span>
+            <button id="simTourToggle" onclick="toggleSimTour()" style="background:none;border:none;font-size:12px;font-weight:700;color:var(--terracotta);cursor:pointer">⏸ Pause Tour</button>
+          </div>
+          <div class="sim-tour-bar">
+            <div class="sim-tour-fill" id="simTourFill"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -928,6 +977,57 @@ if (heroWrapper && tabletCard && window.innerWidth > 900) {
   });
 }
 
+
+// Dynamic Rotating Headline in Hero
+const dynamicWords = document.querySelectorAll('.dynamic-word');
+let currentWordIdx = 0;
+if (dynamicWords.length > 0) {
+  setInterval(() => {
+    dynamicWords[currentWordIdx].classList.remove('active');
+    dynamicWords[currentWordIdx].classList.add('exit');
+    const prevIdx = currentWordIdx;
+    setTimeout(() => {
+      dynamicWords[prevIdx].classList.remove('exit');
+    }, 500);
+    currentWordIdx = (currentWordIdx + 1) % dynamicWords.length;
+    dynamicWords[currentWordIdx].classList.add('active');
+  }, 2400);
+}
+
+// Simulator Auto-Tour
+let tourInterval = null;
+let tourProgress = 0;
+let tourPaused = false;
+const simTourFill = document.getElementById('simTourFill');
+const simKeys = ['day3', 'tablet', 'foodie', 'cover'];
+let currentSimKeyIdx = 0;
+
+function startSimTour() {
+  if (tourInterval) clearInterval(tourInterval);
+  tourProgress = 0;
+  tourInterval = setInterval(() => {
+    if (tourPaused) return;
+    tourProgress += 2.5;
+    if (simTourFill) simTourFill.style.width = tourProgress + '%';
+    if (tourProgress >= 100) {
+      tourProgress = 0;
+      currentSimKeyIdx = (currentSimKeyIdx + 1) % simKeys.length;
+      const nextKey = simKeys[currentSimKeyIdx];
+      const targetBtn = document.querySelector(`.sim-nav-btn[data-sim="${nextKey}"]`);
+      if (targetBtn) switchSimPage(nextKey, targetBtn, false);
+    }
+  }, 100);
+}
+
+function toggleSimTour() {
+  tourPaused = !tourPaused;
+  const btn = document.getElementById('simTourToggle');
+  if (btn) btn.textContent = tourPaused ? '▶ Resume Tour' : '⏸ Pause Tour';
+}
+
+// Start auto tour on load
+startSimTour();
+
 // 10. Simulator In-Page Switcher
 const simPages = {
   day3: { src: '/assets/preview/itinerary.jpg', caption: 'Page 6 · GPS QR Map Integration Active' },
@@ -936,7 +1036,11 @@ const simPages = {
   cover: { src: '/assets/preview/cover.jpg', caption: 'High-Resolution Cover & Day 1-3 Summary' }
 };
 
-function switchSimPage(key, btn) {
+function switchSimPage(key, btn, userTriggered = true) {
+  if (userTriggered) {
+    tourProgress = 0;
+    if (simTourFill) simTourFill.style.width = '0%';
+  }
   document.querySelectorAll('.sim-nav-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   const frame = document.getElementById('simFrame');
