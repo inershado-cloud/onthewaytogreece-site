@@ -123,13 +123,14 @@
       </svg>
     </div>
 
-    <!-- SVG Scenery Vectors -->
+        <!-- SVG Scenery Vectors (Storybook Cartoon Greece Art) -->
     <svg class="scenery-svg" viewBox="0 0 1600 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
+        <!-- Sea Gradients -->
         <linearGradient id="seaGradMidday" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#3b7cb4"/>
-          <stop offset="50%" stop-color="#245d94"/>
-          <stop offset="100%" stop-color="#18416d"/>
+          <stop offset="0%" stop-color="#387cb4"/>
+          <stop offset="50%" stop-color="#225d94"/>
+          <stop offset="100%" stop-color="#16416d"/>
         </linearGradient>
         <linearGradient id="seaGradDawn" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#768eb2"/>
@@ -148,111 +149,131 @@
         </linearGradient>
       </defs>
 
-      <!-- Distant Hills (Shared) -->
+      <!-- 1. Distant Cartoon Mountains / Hills -->
       <g class="layer-distant-hills">
-        <path class="distant-hill-2" d="M0,380 Q350,310 700,360 T1400,340 Q1500,350 1600,360 L1600,600 L0,600 Z"/>
-        <path class="distant-hill-1" d="M0,410 Q400,350 850,400 T1600,390 L1600,600 L0,600 Z"/>
+        <path class="distant-hill-2" d="M0,230 Q400,160 800,210 T1600,190 L1600,600 L0,600 Z"/>
+        <path class="distant-hill-1" d="M0,270 Q440,210 900,260 T1600,240 L1600,600 L0,600 Z"/>
       </g>
 
-      <!-- 1. ISLANDS SCENERY LAYER -->
+      <!-- 2. ISLANDS CARTOON SCENERY LAYER -->
       <g class="layer-islands" id="layerIslands">
-        <!-- Deep Sea Surface -->
-        <rect class="sea-surface" x="0" y="440" width="1600" height="160"/>
-        <!-- Horizon Line -->
-        <path class="sea-horizon-line" d="M0,440 Q400,436 800,440 T1600,440" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+        <!-- Aegean Sea on the Right -->
+        <path class="sea-surface" d="M720,320 L1600,320 L1600,600 L720,600 Z"/>
+        <!-- Sea Horizon Wave Line -->
+        <path class="sea-horizon-line" d="M720,320 Q1160,314 1600,320" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
         
-        <!-- Bobbing Sailing Boat -->
-        <g class="scenery-sailboat" id="sceneSailboat" transform="translate(1220, 425)">
+        <!-- Cute Cartoon Sailing Boat on the Aegean Sea -->
+        <g class="scenery-sailboat" id="sceneSailboat" transform="translate(1220, 305)">
+          <!-- Terracotta Wood Hull -->
           <path class="boat-hull" d="M0,18 L60,18 Q52,32 30,32 Q8,32 0,18 Z" fill="#b85d38"/>
-          <path d="M4,20 L56,20" stroke="#fff" stroke-width="1.5"/>
-          <line x1="30" y1="0" x2="30" y2="18" stroke="#fff" stroke-width="2"/>
+          <path d="M4,20 L56,20" stroke="#fff" stroke-width="1.8"/>
+          <line x1="30" y1="0" x2="30" y2="18" stroke="#fff" stroke-width="2.2"/>
           <path class="boat-sail" d="M30,1 L52,16 L30,16 Z" fill="#ffffff"/>
           <path class="boat-sail" d="M28,4 L12,16 L28,16 Z" fill="#f4efe6"/>
-          <ellipse cx="30" cy="32" rx="34" ry="3" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.2"/>
+          <ellipse cx="30" cy="32" rx="34" ry="3.5" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.4"/>
         </g>
 
-        <!-- Island Foreground Ridge -->
-        <path class="island-ridge" d="M0,420 Q320,380 620,410 Q850,440 1050,460 L1050,600 L0,600 Z"/>
+        <!-- Island Middle Ridge (Where the Village Sits ABOVE the Buttons) -->
+        <path class="island-ridge" d="M0,280 Q380,240 720,320 L720,600 L0,600 Z"/>
+        
+        <!-- Foreground Tan Sand Bank (Where the Buttons Sit BELOW the Buildings) -->
+        <path class="island-foreground-bank" d="M0,420 Q420,390 820,440 L820,600 L0,600 Z" fill="#cbb18d" opacity="0.95"/>
 
-        <!-- Cycladic White Village & Blue Domes -->
+        <!-- Cycladic Cartoon Village & Blue Domes (Sitting Above the Buttons) -->
         <g class="village-buildings">
-          <rect class="building-body" x="40" y="380" width="60" height="50" rx="3"/>
-          <rect class="window-lit" x="55" y="395" width="10" height="14" rx="2"/>
+          <!-- House 1 -->
+          <rect class="building-body" x="20" y="240" width="70" height="65" rx="3"/>
+          <rect class="window-lit" x="38" y="258" width="12" height="16" rx="2"/>
 
-          <rect class="building-body" x="110" y="365" width="55" height="65" rx="3"/>
-          <rect class="window-lit" x="125" y="380" width="10" height="14" rx="2"/>
+          <!-- House 2 -->
+          <rect class="building-body" x="100" y="220" width="65" height="85" rx="3"/>
+          <rect class="window-lit" x="116" y="238" width="12" height="16" rx="2"/>
 
-          <rect class="building-body" x="175" y="375" width="70" height="55" rx="3"/>
-          <path class="church-dome" d="M182,375 A28,28 0 0,1 238,375 Z"/>
-          <line class="cross-line" x1="210" y1="340" x2="210" y2="348"/>
-          <line class="cross-line" x1="206" y1="343" x2="214" y2="343"/>
-          <rect class="window-lit" x="195" y="390" width="12" height="18" rx="2"/>
+          <!-- Church 1 with Blue Dome -->
+          <rect class="building-body" x="175" y="232" width="75" height="73" rx="3"/>
+          <path class="church-dome" d="M182,232 A30,30 0 0,1 242,232 Z"/>
+          <rect class="window-lit" x="198" y="252" width="14" height="20" rx="2"/>
 
-          <rect class="building-body" x="255" y="355" width="65" height="75" rx="3"/>
-          <rect class="window-lit" x="272" y="372" width="12" height="16" rx="2"/>
+          <!-- House 3 -->
+          <rect class="building-body" x="260" y="215" width="70" height="90" rx="3"/>
+          <rect class="window-lit" x="278" y="235" width="14" height="18" rx="2"/>
 
-          <rect class="building-body" x="330" y="365" width="90" height="65" rx="3"/>
-          <path class="church-dome grand-dome" d="M340,365 A35,35 0 0,1 410,365 Z"/>
-          <line class="cross-line" x1="375" y1="322" x2="375" y2="332"/>
-          <line class="cross-line" x1="370" y1="326" x2="380" y2="326"/>
-          <rect class="window-lit" x="355" y="385" width="14" height="20" rx="2"/>
-          <rect class="window-lit" x="382" y="385" width="14" height="20" rx="2"/>
+          <!-- Cathedral with Grand Blue Dome & Cross -->
+          <rect class="building-body" x="340" y="225" width="95" height="80" rx="3"/>
+          <path class="church-dome grand-dome" d="M352,225 A38,38 0 0,1 428,225 Z"/>
+          <!-- White Cross -->
+          <line class="cross-line" x1="390" y1="180" x2="390" y2="191"/>
+          <line class="cross-line" x1="384" y1="185" x2="396" y2="185"/>
+          <rect class="window-lit" x="366" y="248" width="14" height="20" rx="2"/>
+          <rect class="window-lit" x="396" y="248" width="14" height="20" rx="2"/>
 
-          <rect class="building-body" x="430" y="380" width="55" height="50" rx="3"/>
-          <rect class="window-lit" x="448" y="396" width="10" height="14" rx="2"/>
+          <!-- House 4 -->
+          <rect class="building-body" x="445" y="242" width="68" height="63" rx="3"/>
+          <rect class="window-lit" x="464" y="260" width="12" height="16" rx="2"/>
 
-          <rect class="building-body" x="495" y="392" width="50" height="38" rx="3"/>
-          <rect class="window-lit" x="510" y="405" width="9" height="12" rx="2"/>
+          <!-- House 5 -->
+          <rect class="building-body" x="522" y="252" width="65" height="53" rx="3"/>
+          <rect class="window-lit" x="538" y="268" width="11" height="15" rx="2"/>
         </g>
       </g>
 
-      <!-- 2. MAINLAND SCENERY LAYER -->
+      <!-- 3. MAINLAND CARTOON SCENERY LAYER -->
       <g class="layer-mainland" id="layerMainland" style="display:none;opacity:0">
-        <path class="mainland-ridge" d="M0,410 Q450,370 900,430 T1600,420 L1600,600 L0,600 Z"/>
+        <!-- Mainland Valley Ridge -->
+        <path class="mainland-ridge" d="M0,280 Q450,230 920,310 T1600,300 L1600,600 L0,600 Z"/>
+        <!-- Foreground Bank (Where Buttons Sit Below the Buildings) -->
+        <path class="mainland-foreground-bank" d="M0,420 Q480,390 880,440 L880,600 L0,600 Z" fill="#bfa37e" opacity="0.95"/>
 
-        <!-- Sacred Acropolis Hill -->
-        <path class="acropolis-rock" d="M340,430 Q540,310 740,310 Q940,310 1140,430 Z"/>
+        <!-- Sacred Acropolis Hill in Center -->
+        <path class="acropolis-rock" d="M280,310 Q560,170 840,170 Q1120,170 1400,310 Z"/>
 
-        <!-- Parthenon Temple -->
-        <g class="parthenon-temple" transform="translate(620, 248)">
-          <polygon class="temple-pediment" points="110,0 0,26 220,26"/>
-          <rect class="temple-architrave" x="8" y="26" width="204" height="8" rx="1"/>
-          <rect class="temple-column" x="14" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="38" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="62" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="86" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="110" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="134" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="158" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="182" y="34" width="8" height="38"/>
-          <rect class="temple-column" x="198" y="34" width="8" height="38"/>
-          <rect class="temple-base" x="2" y="72" width="216" height="10" rx="1"/>
+        <!-- Classical Cartoon Parthenon Temple atop Acropolis -->
+        <g class="parthenon-temple" transform="translate(660, 105)">
+          <!-- Pediment Triangle Roof -->
+          <polygon class="temple-pediment" points="120,0 0,30 240,30"/>
+          <rect class="temple-architrave" x="8" y="30" width="224" height="10" rx="2"/>
+          <!-- Classical Temple Columns -->
+          <rect class="temple-column" x="14" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="42" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="70" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="98" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="126" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="154" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="182" y="40" width="10" height="44" rx="1"/>
+          <rect class="temple-column" x="210" y="40" width="10" height="44" rx="1"/>
+          <!-- Temple Base Plinth -->
+          <rect class="temple-base" x="2" y="84" width="236" height="12" rx="2"/>
         </g>
 
-        <!-- Olive Trees & Mediterranean Cypress Groves -->
+        <!-- Cartoon Olive Trees & Cypress Cones -->
         <g class="mainland-trees">
-          <ellipse class="tree-olive" cx="240" cy="425" rx="18" ry="24"/>
-          <rect class="tree-trunk" x="238" y="445" width="4" height="15" fill="#5c4033"/>
+          <!-- Olive Tree 1 -->
+          <ellipse class="tree-olive" cx="190" cy="295" rx="18" ry="24"/>
+          <rect class="tree-trunk" x="188" y="315" width="4" height="14" fill="#5c4033"/>
 
-          <ellipse class="tree-olive" cx="540" cy="435" rx="16" ry="22"/>
-          <rect class="tree-trunk" x="538" y="453" width="4" height="14" fill="#5c4033"/>
+          <!-- Olive Tree 2 -->
+          <ellipse class="tree-olive" cx="510" cy="300" rx="16" ry="22"/>
+          <rect class="tree-trunk" x="508" y="318" width="4" height="14" fill="#5c4033"/>
 
-          <path class="tree-cypress" d="M1180,450 C1174,420 1176,380 1184,360 C1192,380 1194,420 1188,450 Z"/>
-          <path class="tree-cypress" d="M1210,460 C1205,435 1207,400 1214,380 C1221,400 1223,435 1218,460 Z"/>
+          <!-- Cypress Tree 1 (Tall Cartoon Cone) -->
+          <path class="tree-cypress" d="M1180,320 C1174,285 1176,240 1184,220 C1192,240 1194,285 1188,320 Z"/>
+          <!-- Cypress Tree 2 -->
+          <path class="tree-cypress" d="M1212,330 C1206,300 1208,260 1215,240 C1222,260 1224,300 1218,330 Z"/>
 
-          <ellipse class="tree-olive" cx="1320" cy="445" rx="18" ry="24"/>
-          <rect class="tree-trunk" x="1318" y="465" width="4" height="14" fill="#5c4033"/>
+          <!-- Olive Tree 3 -->
+          <ellipse class="tree-olive" cx="1320" cy="315" rx="18" ry="24"/>
+          <rect class="tree-trunk" x="1318" y="335" width="4" height="14" fill="#5c4033"/>
         </g>
 
-        <!-- Traditional Stone Houses -->
+        <!-- Mainland Houses (Above the Buttons) -->
         <g class="mainland-houses">
-          <rect class="building-body" x="120" y="390" width="70" height="50" rx="2"/>
-          <polygon points="115,390 155,372 195,390" fill="#9e472a"/>
-          <rect class="window-lit" x="140" y="405" width="12" height="16" rx="2"/>
+          <rect class="building-body" x="80" y="255" width="70" height="50" rx="3"/>
+          <polygon points="75,255 115,235 155,255" fill="#9e472a"/>
+          <rect class="window-lit" x="100" y="270" width="12" height="16" rx="2"/>
 
-          <rect class="building-body" x="1380" y="410" width="75" height="55" rx="2"/>
-          <polygon points="1375,410 1417,390 1460,410" fill="#9e472a"/>
-          <rect class="window-lit" x="1405" y="425" width="12" height="16" rx="2"/>
+          <rect class="building-body" x="1380" y="275" width="75" height="55" rx="3"/>
+          <polygon points="1375,275 1417,255 1460,275" fill="#9e472a"/>
+          <rect class="window-lit" x="1405" y="292" width="12" height="16" rx="2"/>
         </g>
       </g>
     </svg>
@@ -263,7 +284,7 @@
         <span class="live-dot"></span>
         <span>Curated by an Athens Local · 110+ Greece Itineraries</span>
       </div>
-      <h1 class="hero-title-steady">Your Greece trip, planned with<br>insider secrets for <span class="dynamic-word-wrap" id="dynamicWordWrap"><span class="dynamic-word active">Santorini</span><span class="dynamic-word">Crete</span><span class="dynamic-word">Milos</span><span class="dynamic-word">Athens</span><span class="dynamic-word">Naxos</span><span class="dynamic-word">Corfu</span></span>.</h1>
+      <h1 class="hero-title-steady">Your Greece trip, planned with<br>insider secrets for <span class="dynamic-word-wrap" id="dynamicWordWrap"><span class="dynamic-word active">Santorini</span><span class="dynamic-word">Crete</span><span class="dynamic-word">Milos</span><span class="dynamic-word">Athens</span><span class="dynamic-word">Naxos</span><span class="dynamic-word">Corfu</span></span></h1>
       <p>Day-by-day itineraries, instant scan-to-map QR codes, authentic taverna spots, and clickable tablet tabs. Researched and designed in Greece, ready to print or open in GoodNotes.</p>
       
       <div class="hero-cta">
